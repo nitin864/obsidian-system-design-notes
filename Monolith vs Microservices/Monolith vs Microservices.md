@@ -86,6 +86,6 @@ we use SAGA design pattern
 
 It is a strategy for managing **distributed transactions** across multiple microservices that each have their own database.  Instead of relying on complex, blocking protocols like **Two-Phase Commit (2PC)**, the Saga breaks a large business transaction into a sequence of smaller **local transactions**.
 
-another thing is Data Consistency
+**another thing is Data Consistency**
 
 suppose we are migrating from monolith to micro and, but there is an issue the DB Consistency , there are 2 db 1 in micro archi and another in monolithc archi of payments module so we use a 1 outllok table, suppose a value of x in monolitic db is =5 then we create an event in kafka and push that event to micro archi db so micro db stays updated with that value of x.
