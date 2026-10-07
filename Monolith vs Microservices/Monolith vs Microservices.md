@@ -2,6 +2,7 @@
 [[SYSTEM_DESIGN_NOTES]]
 
 PART: 1 (DIFFERENCE)
+
  in monolith archi we put all files in single codebase, for example folder like Auth, Cart , 
  Payments in a single codebase (tightly coupled)
  
