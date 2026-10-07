@@ -36,3 +36,7 @@ It is a software design approach that structures an application as a collection 
 in this archi we divide/break-down each module in different different services rather running whole system on a single machine/server, and these services are loosely coupled. we can build,run,test,deploy them individually. This solves Monolith archi problem
 
 ![[Pasted image 20261007174942.png]]
+
+Example Architeccture:
+
+![[Pasted image 20261007175109.png]]
