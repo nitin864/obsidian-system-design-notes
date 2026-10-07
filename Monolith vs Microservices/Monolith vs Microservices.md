@@ -62,5 +62,6 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 Taking example of Amazon
 
 1. understand your monolith
-2. Identify high impact area
+2. Identify high impact area (in which module the traffic is high)
 3. Build API Contract & setup communication
+4. 
