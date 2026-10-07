@@ -67,3 +67,5 @@ Taking example of Amazon
 4. take a singe module and work on it
 5. Monitoring and Observebility
 6. Scaling and Optimization
+
+**Canary deployment** is a way to release a new software version to a small number of users first. The team checks if everything works properly and there are no major bugs. If everything is fine, the new version is gradually released to all users. This reduces the risk of a faulty update affecting everyone.
