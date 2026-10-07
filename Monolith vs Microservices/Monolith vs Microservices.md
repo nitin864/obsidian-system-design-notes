@@ -88,4 +88,6 @@ It is a strategy for managing **distributed transactions** across multiple mic
 
 **another thing is Data Consistency**
 
-suppose we are migrating from monolith to micro and, but there is an issue the DB Consistency , there are 2 db 1 in micro archi and another in monolithc archi of payments module so we use a 1 outllok table, suppose a value of x in monolitic db is =5 then we create an event in kafka and push that event to micro archi db so micro db stays updated with that value of x.
+Suppose we are migrating from a **monolithic architecture to a microservices architecture**. One of the major challenges is **database consistency**, because we now have two databases: one used by the monolithic Payment module and another used by the new Payment microservice.
+
+To keep both databases synchronized, we can use an **Outbox Table**. For example, if the value of `x` in the monolithic database is `5`, we create an event containing this updated value and store it in the Outbox Table. This event is then published to **Kafka**, which delivers it to the Payment microservice. The microservice then updates its database with the new value of `x`, keeping both databases synchronized.
