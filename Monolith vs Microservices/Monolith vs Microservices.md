@@ -1,4 +1,3 @@
-
 [[SYSTEM_DESIGN_NOTES]]
 
 **PART: 1 (DIFFERENCE)**
@@ -6,13 +5,13 @@
  in monolith archi we put all files in single codebase, for example folder like Auth, Cart , 
  Payments in a single codebase (tightly coupled)
  
-![[Pasted image 20261007172420.png]]
+![Pasted image 20261007172420](./Pasted%20image%2020261007172420.png)
 
-it is a traditional software design model where an entire application including the user interface, business logic, and data access layers is built as a **single, unified codebase** and deployed as one indivisible unit.
+it is a traditional software design model where an entire application including the user interface, business logic, and data access layers is built as a **single, unified codebase** and deployed as one indivisible unit.
 
 Example: 
 
-![[Pasted image 20261007163748.png]]
+![Pasted image 20261007163748](./Pasted%20image%2020261007172420.png)
 
 index.js --> entry point
 
@@ -32,15 +31,15 @@ suppose we have a deployed system and we want to change something, in Payment mo
 
 This whole issue is solved by **MICROSERVICES ACRITECHTURE** 
 
-It is a software design approach that structures an application as a collection of **loosely coupled**, **independently deployable** services organized around **business capabilities**
+It is a software design approach that structures an application as a collection of **loosely coupled**, **independently deployable** services organized around **business capabilities**
 
 in this archi we divide/break-down each module in different different services rather running whole system on a single machine/server, and these services are loosely coupled. we can build,run,test,deploy them individually. This solves Monolith archi problem
 
-![[Pasted image 20261007174942.png]]
+![Pasted image 20261007174942](./Pasted%20image%2020261007174942.png)
 
 Example Architeccture:
 
-![[Pasted image 20261007175109.png]]
+![Pasted image 20261007175109](./Pasted%20image%2020261007175109.png)
 
 
 **one more thing about database, in monolith archi there is a common DB in use but in microservices archi there is different DB for each different services**. we select DB based on service functionality
@@ -55,8 +54,11 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 
 **PART2: HOW TO CONVERT MONOLITH TO MICRO ARCHI**
 
+<<<<<<< HEAD
 1. It's not a 1 day activity
 2. we can't migrate whole system in 1 flow
 3. we are not going to transfer 100% of traffic in a single flow
 
 Taking examp,e 
+=======
+>>>>>>> origin/main
