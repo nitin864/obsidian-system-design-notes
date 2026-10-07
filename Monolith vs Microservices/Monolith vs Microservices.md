@@ -76,4 +76,5 @@ It is a software strategy used to slowly replace a large, old **monolithic appli
 
 ![[Pasted image 20261007191915.png]]
 
-let's suppose after redirecting requests by controller, if our newly developed micro-service is currently not able to process those 10% requests than the controller automatically reduces the traffic to 0% and routes that requests to monolith archi and the whole flow looks like
+let's suppose after redirecting requests by controller, if our newly developed micro-service is currently not able to process those 10% requests than the controller automatically reduces the traffic to 0% and routes that requests to monolith archi and the whole flow looks like this: 
+
