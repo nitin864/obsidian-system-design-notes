@@ -53,5 +53,5 @@ Also, if we want to implement a **credit-card payment feature** in the Payment m
 
 In the **scaling** aspect, if the Auth module receives significantly more requests than the other modules, we only need to scale the **Auth module** by adding more server instances. There is no need to scale the entire system, which makes resource utilization more efficient and **reduces infrastructure costs**.
 
-PART2: HOW TO CONVERT MONOLITH TO MICRO ARCHI
+**PART2: HOW TO CONVERT MONOLITH TO MICRO ARCHI**
 
