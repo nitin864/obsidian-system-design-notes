@@ -84,4 +84,4 @@ Maintain Transaction:
 
 we use SAGA design pattern
 
-It  is a strategy for managing **distributed transactions** across multiple microservices that each have their own database.  Instead of relying on complex, blocking protocols like **Two-Phase Commit (2PC)**, the Saga breaks a large business transaction into a sequence of smaller **local transactions**.
+It is a strategy for managing **distributed transactions** across multiple microservices that each have their own database.  Instead of relying on complex, blocking protocols like **Two-Phase Commit (2PC)**, the Saga breaks a large business transaction into a sequence of smaller **local transactions**.
