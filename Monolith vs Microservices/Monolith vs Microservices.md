@@ -6,7 +6,7 @@
  in monolith archi we put all files in single codebase, for example folder like Auth, Cart , 
  Payments in a single codebase (tightly coupled)
  
-![[Pasted image 20261007172420.png]]
+
 
 it is a traditional software design model where an entire application including the user interface, business logic, and data access layers is built as a **single, unified codebase** and deployed as one indivisible unit.
 
