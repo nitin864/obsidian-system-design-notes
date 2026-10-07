@@ -40,3 +40,6 @@ in this archi we divide/break-down each module in different different services r
 Example Architeccture:
 
 ![[Pasted image 20261007175109.png]]
+
+
+**one more thing about database, in monolith archi there is a common DB in use but in microservices archi there is different DB for each different services**. we select DB based on service functionality
