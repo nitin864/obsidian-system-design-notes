@@ -4,49 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "ffa30ad6a4bf6868",
-        "type": "split",
+        "id": "7144ad2e8c530b64",
+        "type": "tabs",
+        "dimension": 62.261146496815286,
         "children": [
           {
-            "id": "0dba41274038a22e",
-            "type": "tabs",
-            "dimension": 22.22222222222222,
-            "children": [
-              {
-                "id": "ae0163cbfb75a1b2",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
-                }
-              }
-            ]
-          },
-          {
-            "id": "7144ad2e8c530b64",
-            "type": "tabs",
-            "dimension": 77.77777777777779,
-            "children": [
-              {
-                "id": "83fff012b30bfcde",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Monolith vs Microservices/Monolith vs Microservices.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Monolith vs Microservices"
-                }
-              }
-            ]
+            "id": "83fff012b30bfcde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Monolith vs Microservices/Monolith vs Microservices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Monolith vs Microservices"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
+      },
+      {
+        "id": "adb813cf41a15591",
+        "type": "tabs",
+        "dimension": 37.738853503184714,
+        "children": [
+          {
+            "id": "04bc307b72218430",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,8 +203,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "ae0163cbfb75a1b2",
+  "active": "04bc307b72218430",
   "lastOpenFiles": [
-    "Monolith vs Microservices/Monolith vs Microservices.md"
+    "Monolith vs Microservices/Monolith vs Microservices.md",
+    "SYSTEM_DESIGN_NOTES.md"
   ]
 }
