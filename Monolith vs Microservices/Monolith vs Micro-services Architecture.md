@@ -92,4 +92,3 @@ Suppose we are migrating from a **monolithic architecture to a microservices arc
 
 To keep both databases synchronized, we can use an **Outbox Table**. For example, if the value of `x` in the monolithic database is `5`, we create an event containing this updated value and store it in the Outbox Table. This event is then published to **Kafka**, which delivers it to the Payment microservice. The microservice then updates its database with the new value of `x`, keeping both databases synchronized.
 
-![[Outbox Pattern Migration Flow.png]]
