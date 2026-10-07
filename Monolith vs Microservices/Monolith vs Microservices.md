@@ -59,4 +59,4 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 2. we can't migrate whole system in 1 flow
 3. we are not going to transfer 100% of traffic in a single flow
 
-Taking examp,e 
+Taking examp
