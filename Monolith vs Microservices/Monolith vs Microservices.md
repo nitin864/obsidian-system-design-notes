@@ -60,3 +60,5 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 3. we are not going to transfer 100% of traffic in a single flow
 
 Taking example of Amazon
+
+1. understand your monolith
