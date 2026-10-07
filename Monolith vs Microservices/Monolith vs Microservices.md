@@ -62,3 +62,4 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 Taking example of Amazon
 
 1. understand your monolith
+2. Identify high impact areas
