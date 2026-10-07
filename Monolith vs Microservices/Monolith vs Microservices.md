@@ -57,4 +57,6 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 
 1. It's not a 1 day activity
 2. we can't migrate whole system in 1 flow
-3. 
+3. we are not going to transfer 100% of traffic in a single flow
+
+
