@@ -3,7 +3,7 @@
 
 **PART: 1 (DIFFERENCE)**
 
- in monolith archi we put all files in single codebase, for example folder like Auth, Cart , 
+ in monolith archi we put all files in single codebase, for examp le folder like Auth, Cart , 
  Payments in a single codebase (tightly coupled)
  
 ![Pasted image 20261007172420](./Pasted%20image%2020261007172420.png)
