@@ -66,4 +66,4 @@ Taking example of Amazon
 3. Build API Contract & setup communication
 4. take a singe module and work on it
 5. Monitoring and Observibility
-6. Scaling and Optimi
+6. Scaling and Optimizat
