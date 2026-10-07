@@ -2,7 +2,10 @@
 [[SYSTEM_DESIGN_NOTES]]
 
 
- in monolith archi we put all files in single codebase, for example folder like Auth, Cart , Payments in a single codebase (tightly coupled)
+ in monolith archi we put all files in single codebase, for example folder like Auth, Cart , 
+ Payments in a single codebase (tightly coupled)
+ 
+![[Pasted image 20261007172420.png]]
 
 it is a traditional software design model where an entire application including the user interface, business logic, and data access layers is built as a **single, unified codebase** and deployed as one indivisible unit.
 
@@ -29,3 +32,7 @@ suppose we have a deployed system and we want to change something, in Payment mo
 This whole issue is solved by **MICROSERVICES ACRITECHTURE** 
 
 It is a software design approach that structures an application as a collection of **loosely coupled**, **independently deployable** services organized around **business capabilities**
+
+in this archi we divide/break-down each module in different different services rather running whole system on a single machine/server, and these services are loosely coupled. we can build,run,test,deploy them individually. This solves Monolith archi problem
+
+![[Pasted image 20261007174942.png]]
