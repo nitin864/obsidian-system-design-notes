@@ -65,4 +65,5 @@ Taking example of Amazon
 2. Identify high impact area (in which module the traffic is high)
 3. Build API Contract & setup communication
 4. take a singe module and work on it
-5. Monitoring and Observibi
+5. Monitoring and Observibility
+6. Scal
