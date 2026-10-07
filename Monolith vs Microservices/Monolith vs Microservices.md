@@ -51,3 +51,5 @@ suppose Payment module crashed, this does not affect the Auth, Order etc other m
 Also, if we want to implement a **credit-card payment feature** in the Payment module, we don't need to redeploy the entire system. We can simply redeploy the **Payment module** after integrating the feature. This minimizes downtime, prevents the entire system from going down, and ensures that other modules and users remain unaffected. 
 
 In the **scaling** aspect, if the Auth module receives significantly more requests than the other modules, we only need to scale the **Auth module** by adding more server instances. There is no need to scale the entire system, which makes resource utilization more efficient and **reduces infrastructure costs**.
+
+this is a test
