@@ -13,11 +13,19 @@ Example:
 index.js --> entry point
 
 **PROBLEMS IN MONOLITH ARCHI**:
-  --> single point of failure
+  1--> single point of failure
   --> for exmaple suppose in grocery system,
 
  there are many modules such  AUTH,CART,ORDER AND PAYMENT, if something goes wrong with payment models it directly affects all other modules such as AUTH,ORDER etc as these modules as directly dependent on each other and the system is tightly coupled...
 
-  --> deployment bottle-neck
+  2--> deployment bottle-neck
  
 suppose we have a deployed system and we want to change something, in Payment module we want to integrate a new feature to pay via CreditCard, after integrating this feature we need to redeploy this whole system!!, that's the main issue with current monolith archi
+
+ 3--> Individual Scaling
+
+ this is another a big issue SCALING PROBLEM, suppose your PAYMENT module is hitting 20M+ requests and it need to be scaled before whole system crashes, and in other module like AUTH and other modules not hitting that much request but due to which we need to scale our whole system instead of scaling PAYMENT module, this increase the costing and Infra!!!
+
+This whole issue is solved by **MICROSERVICES ACRITECHTURE** 
+
+It is a software design approach that structures an application as a collection of **loosely coupled**, **independently deployable** services organized around **business capabilities**
