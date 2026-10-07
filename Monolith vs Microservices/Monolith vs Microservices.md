@@ -76,4 +76,4 @@ It is a software strategy used to slowly replace a large, old **monolithic appli
 
 ![[Pasted image 20261007191915.png]]
 
-let's suppose if our newly developed micro-service is curre
+let's suppose after redirecting if our newly developed micro-service is curre
