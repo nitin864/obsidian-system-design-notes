@@ -76,4 +76,4 @@ It is a software strategy used to slowly replace a large, old **monolithic appli
 
 ![[Pasted image 20261007191915.png]]
 
-let's suppose if the 
+let's suppose if our 
