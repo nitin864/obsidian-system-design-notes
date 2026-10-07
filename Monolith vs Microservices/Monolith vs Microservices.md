@@ -78,4 +78,4 @@ It is a software strategy used to slowly replace a large, old **monolithic appli
 
 let's suppose after redirecting requests by controller, if our newly developed micro-service is currently not able to process those 10% requests than the controller automatically reduces the traffic to 0% and routes that requests to monolith archi and the whole flow looks like this: 
 
-![[Pasted image 20261007192338.png]]
+![[.Pasted image 20261007192338.png]]
