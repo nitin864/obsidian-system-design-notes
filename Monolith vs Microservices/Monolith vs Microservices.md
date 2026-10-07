@@ -88,3 +88,4 @@ It is a strategy for managing **distributed transactions** across multiple mic
 
 another thing is Data Consistency
 
+suppose w
