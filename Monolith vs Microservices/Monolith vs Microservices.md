@@ -12,7 +12,7 @@ it is a traditional software design model where an entire application including 
 
 Example: 
 
-![[Pasted image 20261007163748.png]]
+![Pasted image 20261007163748](./Pasted%20image%2020261007163748.png)
 
 index.js --> entry point
 
