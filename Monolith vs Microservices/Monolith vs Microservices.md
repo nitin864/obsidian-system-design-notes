@@ -1,17 +1,16 @@
-
 [[SYSTEM_DESIGN_NOTES]]
 
 
  in monolith archi we put all files in single codebase, for example folder like Auth, Cart , 
  Payments in a single codebase (tightly coupled)
  
-![[Pasted image 20261007172420.png]]
+![Pasted image 20261007172420](./Pasted%20image%2020261007172420.png)
 
-it is a traditional software design model where an entire application including the user interface, business logic, and data access layers is built as a **single, unified codebase** and deployed as one indivisible unit.
+it is a traditional software design model where an entire application including the user interface, business logic, and data access layers is built as a **single, unified codebase** and deployed as one indivisible unit.
 
 Example: 
 
-![[Pasted image 20261007163748.png]]
+![Pasted image 20261007163748](./Pasted%20image%2020261007172420.png)
 
 index.js --> entry point
 
@@ -31,15 +30,15 @@ suppose we have a deployed system and we want to change something, in Payment mo
 
 This whole issue is solved by **MICROSERVICES ACRITECHTURE** 
 
-It is a software design approach that structures an application as a collection of **loosely coupled**, **independently deployable** services organized around **business capabilities**
+It is a software design approach that structures an application as a collection of **loosely coupled**, **independently deployable** services organized around **business capabilities**
 
 in this archi we divide/break-down each module in different different services rather running whole system on a single machine/server, and these services are loosely coupled. we can build,run,test,deploy them individually. This solves Monolith archi problem
 
-![[Pasted image 20261007174942.png]]
+![Pasted image 20261007174942](./Pasted%20image%2020261007174942.png)
 
 Example Architeccture:
 
-![[Pasted image 20261007175109.png]]
+![Pasted image 20261007175109](./Pasted%20image%2020261007175109.png)
 
 
 **one more thing about database, in monolith archi there is a common DB in use but in microservices archi there is different DB for each different services**. we select DB based on service functionality
@@ -51,6 +50,5 @@ suppose Payment module crashed, this does not affect the Auth, Order etc other m
 Also, if we want to implement a **credit-card payment feature** in the Payment module, we don't need to redeploy the entire system. We can simply redeploy the **Payment module** after integrating the feature. This minimizes downtime, prevents the entire system from going down, and ensures that other modules and users remain unaffected. 
 
 In the **scaling** aspect, if the Auth module receives significantly more requests than the other modules, we only need to scale the **Auth module** by adding more server instances. There is no need to scale the entire system, which makes resource utilization more efficient and **reduces infrastructure costs**.
-
 
 
