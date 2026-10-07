@@ -117,7 +117,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Monolith vs Microservices/Monolith vs Microservices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +135,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Monolith vs Microservices/Monolith vs Microservices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -179,7 +177,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monolith vs Microservices/Monolith vs Microservices.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -206,12 +203,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "83fff012b30bfcde",
+  "active": "04bc307b72218430",
   "lastOpenFiles": [
+    "Monolith vs Microservices/Monolith vs Microservices.md",
+    "Monolith vs Microservices/Pasted image 20261007175109.png",
+    "Monolith vs Microservices/Pasted image 20261007174942.png",
+    "Monolith vs Microservices/Pasted image 20261007172420.png",
     "Pasted image 20261007175109.png",
     "Pasted image 20261007174942.png",
     "Pasted image 20261007172420.png",
-    "Monolith vs Microservices/Monolith vs Microservices.md",
     "SYSTEM_DESIGN_NOTES.md"
   ]
 }
