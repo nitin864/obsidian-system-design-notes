@@ -72,3 +72,6 @@ Taking example of Amazon
 
 STRANGLER DESIGN PATTERN
 
+
+
+![[Pasted image 20261007191915.png]]
