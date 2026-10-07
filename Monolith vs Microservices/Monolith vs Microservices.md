@@ -88,4 +88,4 @@ It is a strategy for managing **distributed transactions** across multiple mic
 
 another thing is Data Consistency
 
-suppose we are migrating from monolith to micro and, but there is an issue the DB Consistensy 
+suppose we are migrating from monolith to micro and, but there is an issue the DB Consistency 
