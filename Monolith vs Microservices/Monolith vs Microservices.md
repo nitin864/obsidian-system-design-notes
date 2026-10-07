@@ -80,3 +80,6 @@ let's suppose after redirecting requests by controller, if our newly developed m
 
 ![Pasted image 20261007192338|700](./Pasted%20image%2020261007192338.png)
 
+Maintain Transaction:
+
+we use saga design pattern
