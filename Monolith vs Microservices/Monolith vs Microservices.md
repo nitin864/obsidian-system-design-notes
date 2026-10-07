@@ -75,3 +75,5 @@ STRANGLER DESIGN PATTERN
 It is a software strategy used to slowly replace a large, old **monolithic application** with modern **microservices** bit by bit, instead of rewriting everything at once==
 
 ![[Pasted image 20261007191915.png]]
+
+let's suppose if the 
