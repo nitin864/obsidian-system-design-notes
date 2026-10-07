@@ -43,3 +43,7 @@ Example Architeccture:
 
 
 **one more thing about database, in monolith archi there is a common DB in use but in microservices archi there is different DB for each different services**. we select DB based on service functionality
+
+So how this micro-service solves the problem:
+
+suppose Payment module crashed, this does not affect the Auth, Order etc other modules because its a loosely coupled design and eacch module is running on a different servers/machines  
