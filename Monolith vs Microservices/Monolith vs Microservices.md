@@ -74,7 +74,7 @@ STRANGLER DESIGN PATTERN
 
 It is a software strategy used to slowly replace a large, old **monolithic application** with modern **microservices** bit by bit, instead of rewriting everything at once==
 
-![[Pasted image 20261007191915.png]]
+![Pasted image 20261007191915](./Pasted%20image%2020261007191915.png)
 
 let's suppose after redirecting requests by controller, if our newly developed micro-service is currently not able to process those 10% requests than the controller automatically reduces the traffic to 0% and routes that requests to monolith archi and the whole flow looks like this: 
 
