@@ -55,5 +55,5 @@ In the **scaling** aspect, if the Auth module receives significantly more reques
 
 **PART2: HOW TO CONVERT MONOLITH TO MICRO ARCHI**
 
-
-
+1. It's not a 1 day activity
+2. 
