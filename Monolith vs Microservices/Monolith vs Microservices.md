@@ -63,4 +63,4 @@ Taking example of Amazon
 
 1. understand your monolith
 2. Identify high impact area
-3. Build API Contract & setup 
+3. Build API Contract & setup communication
