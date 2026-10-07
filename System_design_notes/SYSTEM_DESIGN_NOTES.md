@@ -1,0 +1,1 @@
+This is my personal notes for my System Design Course which i was learning from a youtube channel "desigKarle" 
