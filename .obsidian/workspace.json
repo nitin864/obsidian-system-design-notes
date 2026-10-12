@@ -6,7 +6,7 @@
       {
         "id": "7144ad2e8c530b64",
         "type": "tabs",
-        "dimension": 62.261146496815286,
+        "dimension": 57.00636942675159,
         "children": [
           {
             "id": "83fff012b30bfcde",
@@ -14,23 +14,23 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monolith vs Microservices/Monolith vs Microservices.md",
+                "file": "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monolith vs Microservices"
+              "title": "Monolith vs Micro-services Architecture"
             }
           }
         ]
       },
       {
-        "id": "adb813cf41a15591",
+        "id": "bf31bf6f48a9ea3e",
         "type": "tabs",
-        "dimension": 37.738853503184714,
+        "dimension": 42.99363057324841,
         "children": [
           {
-            "id": "04bc307b72218430",
+            "id": "2515096bbae75ef8",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -117,6 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,6 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -177,6 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,15 +206,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "04bc307b72218430",
+  "active": "83fff012b30bfcde",
   "lastOpenFiles": [
-    "Monolith vs Microservices/Monolith vs Microservices.md",
+    "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
+    "Monolith vs Microservices/Outbox Pattern Migration Flow.png",
+    "Monolith vs Microservices/Pasted image 20261007192338.png",
+    "Monolith vs Microservices/Pasted image 20261007192314.png",
+    "Monolith vs Microservices/Pasted image 20261007191915.png",
+    "Pasted image 20261007191915.png",
     "Monolith vs Microservices/Pasted image 20261007175109.png",
     "Monolith vs Microservices/Pasted image 20261007174942.png",
     "Monolith vs Microservices/Pasted image 20261007172420.png",
     "Pasted image 20261007175109.png",
     "Pasted image 20261007174942.png",
-    "Pasted image 20261007172420.png",
     "SYSTEM_DESIGN_NOTES.md"
   ]
 }
