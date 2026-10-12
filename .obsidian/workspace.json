@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
+                "file": "API GATEWAY VS LOAD BALANCER/API GATEWAY VS LOAD BALANCER.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monolith vs Micro-services Architecture"
+              "title": "API GATEWAY VS LOAD BALANCER"
             }
           }
         ]
@@ -208,8 +208,10 @@
   },
   "active": "83fff012b30bfcde",
   "lastOpenFiles": [
-    "API GATEWAY VS LOAD BALANCER",
+    "Pasted image 20261012162609.png",
     "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
+    "API GATEWAY VS LOAD BALANCER/API GATEWAY VS LOAD BALANCER.md",
+    "API GATEWAY VS LOAD BALANCER",
     "Monolith vs Microservices/Outbox Pattern Migration Flow.png",
     "Monolith vs Microservices/Pasted image 20261007192338.png",
     "Monolith vs Microservices/Pasted image 20261007192314.png",
