@@ -63,4 +63,8 @@ suppose in an eCommerce system there is 3 Payment EC instances. Suppose EC1, EC2
 
 ;-> easiy naah..!
 
+flow: 
+
+![[Pasted image 20261012170427.png]]
+
 
