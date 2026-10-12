@@ -6,7 +6,7 @@ so API Gateway is smart entry point layer,  it is smart enough to automatically 
 
 In simple terms, an API Gateway tells us which service the client wants to access and routes the request to that service.
 
-![[Pasted image 20261012162609.png]]
+![Pasted image 20261012162609.png](Pasted%20image%2020261012162609.png)
 
 It is layer or server that acts as a single entry point for clients to access multiple backend services, functioning as a reverse proxy in microservices architectures.  It sits between client applications and backend systems to **manage traffic, enforce security policies, and handle authentication**
 
@@ -14,14 +14,14 @@ Facility that API Provides:
 
 1. API Composition
 
-![[Pasted image 20261012163317.png]]
+![Pasted image 20261012163317.png](Pasted%20image%2020261012163317.png)
 
   2. Authentication OAuth 2.0 Flow
 
      so this api gateway only give resource access to only authorized clients
  
 
-![[Pasted image 20261012163758.png]]
+![Pasted image 20261012163758.png](Pasted%20image%2020261012163758.png)
 
 What is done here is, Instead of having Authentication mechanism in each service here we created a centralized Auth Server for each service 
 
@@ -51,7 +51,7 @@ Instead of manually storing the IP address and port of every service, Service Di
 
 here's whole flow diagram: 
 
-![[Pasted image 20261012164749.png]]
+![Pasted image 20261012164749.png](Pasted%20image%2020261012164749.png)
 
 **LOAD BALANCER**
 
@@ -65,6 +65,6 @@ suppose in an eCommerce system there is 3 Payment EC instances. Suppose EC1, EC2
 
 flow: 
 
-![[Pasted image 20261012170427.png]]
+![Pasted image 20261012170427.png](Pasted%20image%2020261012170427.png)
 
 

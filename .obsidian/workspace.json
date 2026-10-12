@@ -21,6 +21,18 @@
               "icon": "lucide-file",
               "title": "API GATEWAY VS LOAD BALANCER"
             }
+          },
+          {
+            "id": "0197c87d34fcf0af",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "API GATEWAY VS LOAD BALANCER/Pasted image 20261012170427.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20261012170427"
+            }
           }
         ]
       },
@@ -209,6 +221,7 @@
   "active": "83fff012b30bfcde",
   "lastOpenFiles": [
     "API GATEWAY VS LOAD BALANCER/Pasted image 20261012170427.png",
+    "API GATEWAY VS LOAD BALANCER/API GATEWAY VS LOAD BALANCER.md",
     "API GATEWAY VS LOAD BALANCER/Pasted image 20261012170408.png",
     "API GATEWAY VS LOAD BALANCER/Pasted image 20261012164749.png",
     "API GATEWAY VS LOAD BALANCER/Pasted image 20261012163758.png",
@@ -217,9 +230,7 @@
     "Pasted image 20261012170427.png",
     "Pasted image 20261012170408.png",
     "Pasted image 20261012162609.png",
-    "API GATEWAY VS LOAD BALANCER/API GATEWAY VS LOAD BALANCER.md",
     "Pasted image 20261012164749.png",
-    "Pasted image 20261012163758.png",
     "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
     "API GATEWAY VS LOAD BALANCER",
     "SYSTEM_DESIGN_NOTES.md"
