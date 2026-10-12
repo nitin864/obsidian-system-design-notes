@@ -67,4 +67,4 @@ flow:
 
 ![Pasted image 20261012170427.png](Pasted%20image%2020261012170427.png)
 
-
+![Pasted image 20261012185313.png](Pasted%20image%2020261012185313.png)
