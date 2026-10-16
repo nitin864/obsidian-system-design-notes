@@ -2,6 +2,31 @@
 
  **load balancer** is a hardware device or software application that distributes incoming network traffic across multiple backend servers to prevent any single server from becoming overloaded
 
+Why do we need it ?
+
+Suppose your application initially runs on a single server.
+
+- 100 users visit your website — everything works fine.
+    
+- 10,000 users arrive — the server starts struggling.
+    
+- 100,000 users arrive — it may run out of CPU, memory, or available connections.
+    
+
+Instead of upgrading one server endlessly, you can add more servers and distribute traffic between them.
+
+A load balancer helps with:
+
+- Scalability: Add more servers when traffic increases.
+    
+- High availability: Stop routing traffic to unhealthy servers.
+    
+- Performance: Avoid overwhelming a single server.
+    
+- Fault tolerance: Keep the application available when an individual server fails.
+    
+- Maintenance: Take a server out of service while updating it, provided sufficient capacity remains.
+
 
 ![[Pasted image 20261016164118.png]]
 
@@ -28,11 +53,16 @@ so there are two types of load balancer :
      works  with tcp/udp level
      dosen't understand header, http, cookies, http path 
      can't read : /api/v1/order
-     it notices these things: 
-     source IP Addr, port, 
-     destination IP Addr, port
-     protocol: TCP/UDP
+     **it address these things:** 
+       source IP Addr, port, 
+       destination IP Addr, port
+       protocol: TCP/UDP
      
     ![[Pasted image 20261016165632.png]] 
-2. L7 LB -- -- this works on **Layer 7: Transport**  of OSI models
+    so LB4 dosen't care the request '/api/v1/chat/createRoom' it just creates the connection to any free inctances and obv there is already a logic implemented inside that connected ChatService
+
+1. L7 LB -- -- this works on **Layer 7: Transport**  of OSI models
+     http,https, websockets --it understands 
+     
+     ![[Pasted image 20261016172052.png]]
 
