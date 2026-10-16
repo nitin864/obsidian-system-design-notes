@@ -21,18 +21,6 @@
               "icon": "lucide-file",
               "title": "Load Balancer, its types and Load Balancing Algorithms"
             }
-          },
-          {
-            "id": "0197c87d34fcf0af",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "API GATEWAY VS LOAD BALANCER/Pasted image 20261012170427.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20261012170427"
-            }
           }
         ]
       },
@@ -220,6 +208,9 @@
   },
   "active": "83fff012b30bfcde",
   "lastOpenFiles": [
+    "Pasted image 20261016175147.png",
+    "LOAD BALANCER/Load Balancer, its types and Load Balancing Algorithms.md",
+    "Pasted image 20261016174731.png",
     "Pasted image 20261016172530.png",
     "LOAD BALANCER/Pasted image 20261016172052.png",
     "LOAD BALANCER/Pasted image 20261016165632.png",
@@ -229,11 +220,8 @@
     "Pasted image 20261016165632.png",
     "Pasted image 20261016164118.png",
     "API GATEWAY VS LOAD BALANCER/API GATEWAY VS LOAD BALANCER.md",
-    "LOAD BALANCER/Load Balancer, its types and Load Balancing Algorithms.md",
     "LOAD BALANCER",
     "Pasted image 20261012185313.png",
-    "API GATEWAY VS LOAD BALANCER/Pasted image 20261012170427.png",
-    "API GATEWAY VS LOAD BALANCER/Pasted image 20261012170408.png",
     "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
     "API GATEWAY VS LOAD BALANCER",
     "SYSTEM_DESIGN_NOTES.md"

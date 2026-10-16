@@ -236,3 +236,210 @@ This brings us to Dynamic Load Balancing.
 
 ---
 
+# Part 2: Dynamic Load Balancing
+
+## 5. Least Connections
+
+### What is it?
+
+Least Connections sends new traffic to the eligible server that currently has the fewest active connections.
+
+Instead of blindly following a fixed sequence, the load balancer looks at how many connections each server is handling.
+
+![[Pasted image 20261016174731.png]]
+
+### How does it work?
+
+Suppose the servers currently have:
+
+- Server A: 20 active connections
+    
+- Server B: 8 active connections
+    
+- Server C: 12 active connections
+    
+
+The load balancer selects Server B because it has the fewest active connections.
+
+It checks the connection counts again when making subsequent routing decisions.
+
+### What problem does it solve?
+
+With Round Robin, a server might receive several long-running requests while another server finishes its work quickly.
+
+Least Connections considers the number of connections currently being handled, making it more adaptive to certain workloads.
+
+### What is the problem with it?
+
+The number of connections doesn't always tell us how busy a server really is.
+
+For example, Server A might have 10 connections that are performing expensive database operations, while Server B has 20 connections that are mostly idle.
+
+Server A could be working much harder even though it has fewer connections.
+
+It also doesn't automatically account for differences in server capacity.
+
+### How do we improve it?
+
+We need to consider two things together: how busy a server is and how powerful it is.
+
+That is the idea behind Weighted Least Connections.
+
+---
+
+## 6. Weighted Least Connections
+
+### What is it?
+
+Weighted Least Connections considers both the current number of active connections and the relative capacity of each server.
+
+It is useful when some servers can handle more work than others.
+
+### How does it work?
+
+Imagine we have three servers:
+
+- Server A: Weight 4, with 40 active connections
+    
+- Server B: Weight 2, with 10 active connections
+    
+- Server C: Weight 1, with 8 active connections
+    
+
+For a simple illustration, we can compare connections relative to weight:
+
+- Server A: 40 / 4 = 10
+    
+- Server B: 10 / 2 = 5
+    
+- Server C: 8 / 1 = 8
+    
+
+Under this simplified model, Server B has the lowest normalized connection count, so it would be selected.
+
+Actual load balancers may use different formulas, so this calculation illustrates the concept rather than a universal implementation.
+
+### What problem does it solve?
+
+Least Connections treats connection counts as the main signal. Weighted Least Connections adds information about server capacity.
+
+A powerful server can handle more connections than a weaker one, so we shouldn't always judge them by raw connection counts alone.
+
+### What is the problem with it?
+
+It still relies on connection counts as an estimate of workload.
+
+A server with fewer connections may still be responding slowly because its database is overloaded or its requests require heavy computation.
+
+We need a way to consider how quickly servers are actually responding.
+
+This leads us to Least Response Time.
+
+---
+
+## 7. Least Response Time
+
+### What is it?
+
+Least Response Time is a dynamic load balancing approach that favors servers with better measured response times.
+
+Depending on the implementation, it may also consider active connections, outstanding requests, or other performance signals.
+
+![[Pasted image 20261016175147.png]]
+
+### How does it work?
+
+Suppose the load balancer observes these average response times:
+
+- Server A: 500 milliseconds
+    
+- Server B: 120 milliseconds
+    
+- Server C: 250 milliseconds
+    
+
+If response time is the deciding factor, Server B is preferred because it has been responding the fastest.
+
+The load balancer uses its measurements to help select a backend for incoming traffic.
+
+### What problem does it solve?
+
+Least Connections assumes that the number of active connections gives us a useful picture of the server's workload.
+
+But a server with fewer connections might still be slow, while a server with more connections might be responding quickly.
+
+Least Response Time focuses on observed performance, which can be more closely related to the user's experience.
+
+### What is the problem with it?
+
+Response times can change very quickly.
+
+A server that responded in 120 milliseconds a moment ago might suddenly become slow because of a database issue or a spike in traffic.
+
+Measurements can also be affected by network latency, request complexity, and temporary slowdowns.
+
+If the load balancer keeps sending traffic to whichever server looks fastest, it may overload that server and cause its response time to increase.
+
+### How can we improve it?
+
+A more advanced load balancing strategy can combine several signals, such as response time, active requests, server capacity, and health checks.
+
+However, more signals also mean more complexity and a greater need for accurate monitoring.
+
+The important lesson is that response time is useful, but it is not a perfect measure of a server's future performance.
+
+---
+
+# Part 3: Connecting the Concepts
+
+## 8. The Complete Story
+
+Let's quickly follow how our e-commerce website evolves.
+
+**First, we use Round Robin.** It distributes requests equally, but doesn't account for different server capacities.
+
+**Then, we introduce Weighted Round Robin.** Powerful servers receive more traffic, but fixed weights don't reflect changing workloads.
+
+**Next, we try IP Hashing.** It helps keep a client's requests mapped to the same server, but clients sharing an IP can cause uneven traffic.
+
+**Then, we move to Least Connections.** It considers active connections, but connection count doesn't always reflect the amount of work being done.
+
+**After that, we introduce Weighted Least Connections.** It accounts for both connections and server capacity, but still doesn't directly measure how quickly requests are being served.
+
+**Finally, we consider Least Response Time.** It uses observed response times to favor faster-responding servers, but those measurements can fluctuate and become outdated.
+
+Each algorithm addresses a particular limitation, but introduces its own trade-offs.
+
+The goal isn't to find one algorithm that is always best. The goal is to choose an algorithm that fits the application's workload and requirements.
+
+---
+
+# Part 4: Extra Concepts Worth Knowing
+
+## 9. What happens when a server fails?
+
+A load balancer usually performs health checks to determine whether backend servers are available.
+
+For example, it may periodically send a request to a health endpoint. If a server repeatedly fails its health checks, the load balancer can stop sending normal traffic to it.
+
+When the server recovers and passes the required checks, it can become eligible for traffic again.
+
+This is important because even the best load balancing algorithm cannot distribute traffic successfully to a server that is unavailable.
+
+## 10. Can a load balancer itself fail?
+
+Yes. If an application depends on one load balancer and that load balancer fails, users may lose access to the entire application.
+
+Production systems therefore commonly deploy redundant load balancers or use managed load balancing services with high-availability mechanisms.
+
+A load balancer improves the availability of backend servers, but it must also be designed for availability.
+
+## 11. What is the difference between a load balancing algorithm and a health check?
+
+A load balancing algorithm decides **which eligible server should receive traffic**.
+
+A health check helps determine **which servers are eligible to receive traffic**.
+
+For example, Least Connections might identify Server B as the least busy server. But if Server B has failed its health checks, it should not be selected.
+
+Both mechanisms work together.
