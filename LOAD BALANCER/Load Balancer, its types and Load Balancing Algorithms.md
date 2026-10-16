@@ -2,6 +2,8 @@
 
  **load balancer** is a hardware device or software application that distributes incoming network traffic across multiple backend servers to prevent any single server from becoming overloaded
 
+![Pasted image 20261016164118.png](Pasted%20image%2020261016164118.png)
+
 Why do we need it ?
 
 Suppose your application initially runs on a single server.
@@ -28,7 +30,7 @@ A load balancer helps with:
 - Maintenance: Take a server out of service while updating it, provided sufficient capacity remains.
 
 
-![[Pasted image 20261016164118.png]]
+![Pasted image 20261016165632.png](Pasted%20image%2020261016165632.png) 
 
 OSI models:
 
@@ -58,7 +60,7 @@ so there are two types of load balancer :
        destination IP Addr, port
        protocol: TCP/UDP
      
-    ![[Pasted image 20261016165632.png]] 
+    ![Pasted image 20261016165632.png](Pasted%20image%2020261016165632.png)
     so LB4 dosen't care the request '/api/v1/chat/createRoom' it just creates the connection to any free inctances and obv there is already a logic implemented inside that connected ChatService
 
    2. **L7 LB -- -- this works on Layer 7: Transport  of OSI models**
@@ -70,10 +72,10 @@ so there are two types of load balancer :
     
        - HTTP headers and, where supported and configured, other request       attributes  
      
-     ![[Pasted image 20261016172052.png]]
+     ![Pasted image 20261016172052.png](Pasted%20image%2020261016172052.png)
 
 
-![[Pasted image 20261016172530.png]]
+![Pasted image 20261016172530.png](Pasted%20image%2020261016172530.png)
 
 
 There are 2 types of algorithms in Load balancer : STATIC AND DYNAMIC
@@ -345,7 +347,7 @@ Least Response Time is a dynamic load balancing approach that favors servers wit
 
 Depending on the implementation, it may also consider active connections, outstanding requests, or other performance signals.
 
-![[Pasted image 20261016175147.png]]
+![Pasted image 20261016175147.png](Pasted%20image%2020261016175147.png)
 
 ### How does it work?
 
