@@ -24,6 +24,8 @@ The important thing is **whose behalf the proxy is acting on**:
 
 This is the main difference between a normal proxy and a reverse proxy.
 
+![](Pasted%20image%2020261021155656.png)
+
 ---
 
 ## What is a Forward Proxy?
