@@ -8,17 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "83fff012b30bfcde",
+            "id": "ad0c30a657e5294e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROXY AND REVERSE PROXY/Proxy vs Reverse Proxy, VPN and Load Balancer.md",
+                "file": "LOAD BALANCER/haproxy_l4_load_balancer_practically.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxy vs Reverse Proxy, VPN and Load Balancer"
+              "title": "haproxy_l4_load_balancer_practically"
+            }
+          }
+        ]
+      },
+      {
+        "id": "68ccbf37b4a9989c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83fff012b30bfcde",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -188,15 +204,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "83fff012b30bfcde",
+  "active": "ad0c30a657e5294e",
   "lastOpenFiles": [
+    "Screenshot From 2026-10-22 20-23-22.png",
+    "Screenshot From 2026-10-22 20-23-31.png",
+    "LOAD BALANCER/Load Balancer, its types and Load Balancing Algorithms.md",
+    "LOAD BALANCER/TESTING L4 practically.md",
+    "LOAD BALANCER/haproxy_l4_load_balancer_practically.md",
+    "file:/home/nitin/Desktop/my_notes/system_design_notes/PROXY AND REVERSE PROXY/Proxy vs Reverse Proxy, VPN and Load Balancer.md",
+    "PROXY AND REVERSE PROXY/Proxy vs Reverse Proxy, VPN and Load Balancer.md",
     "LOAD BALANCER/Pasted image 20261016175147.png",
     "LOAD BALANCER/Pasted image 20261016174731.png",
     "PROXY AND REVERSE PROXY/Pasted image 20261021155656.png",
     "Pasted image 20261021155656.png",
-    "LOAD BALANCER/Load Balancer, its types and Load Balancing Algorithms.md",
     "file:/home/nitin/Downloads/Proxy_20vs_20Reverse_20Proxy_20-_20System_20Design_20Notes.md",
-    "PROXY AND REVERSE PROXY/Proxy vs Reverse Proxy, VPN and Load Balancer.md",
     "PROXY AND REVERSE PROXY/PROXY AND REVERSE PROXY.md",
     "Monolith vs Microservices/Monolith vs Micro-services Architecture.md",
     "PROXY AND REVERSE PROXY",
@@ -205,8 +226,6 @@
     "Pasted image 20261016172530.png",
     "LOAD BALANCER/Pasted image 20261016172052.png",
     "LOAD BALANCER/Pasted image 20261016165632.png",
-    "LOAD BALANCER/Pasted image 20261016164118.png",
-    "LOAD BALANCER/Pasted image 20261012185313.png",
     "API GATEWAY VS LOAD BALANCER/API GATEWAY VS LOAD BALANCER.md",
     "LOAD BALANCER",
     "API GATEWAY VS LOAD BALANCER",
