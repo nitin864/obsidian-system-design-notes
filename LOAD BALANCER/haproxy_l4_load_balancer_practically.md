@@ -406,7 +406,7 @@ A client connects to port 8080, and HAProxy distributes new TCP connections betw
 > **Scope note:** This is a local learning setup. Before exposing it to a network or production traffic, review access controls, logging, TLS requirements, timeouts, health checks, and service hardening.
 
 
-![[Screenshot From 2026-10-22 20-23-31.png]]![[Screenshot From 2026-10-22 20-23-22.png]]
+![Screenshot From 2026-10-22 20-23-31.png](Screenshot%20From%202026-10-22%2020-23-31.png)![Screenshot From 2026-10-22 20-23-22.png](Screenshot%20From%202026-10-22%2020-23-22.png)
 
 haproxy configuration file: 
 
